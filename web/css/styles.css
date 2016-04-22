@@ -1,0 +1,271 @@
+body{
+	width: 100%;
+	height: auto;
+	font-family: 'Roboto', sans-serif;
+	background: #F2F2F2;
+}
+header{
+	background-color: #6974B4;
+	position: fixed;
+    left: 0px;
+    top: 0px;
+	right: 0px;
+	height: 55px;
+	width: 100%;
+	padding: 0px 35px 0px 0px;
+	z-index: 30;
+}
+
+.brand-bar{
+	width: 255px;
+    display: block;
+    height: 55px;
+    line-height: 55px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+	float: left;
+}
+
+.head-nav{
+    font-size: 32px;
+    color: #fff;
+    height: 55px;
+    display: inline-block;
+    padding: 0px 35px;
+    line-height: 55px;
+	
+}
+
+.head-nav-right{
+    float: right;
+    height: 55px;
+    line-height: 55px;
+	display: flex;
+}
+
+.head-nav-right a{
+	color: #fff;
+	font-size: 15px;
+}
+
+.head-nav-right .message-btn{
+	float: left;
+    font-size: 20px;
+    line-height: 55px;
+    color: #fff;
+    margin-right: 35px;
+}
+
+.logedin-user-container{
+	position: relative;
+}
+
+.logedin-user-container img{
+	width: 35px;
+    border-radius: 100%;
+	margin-right: 10px;
+}
+
+.head-nav p{
+	margin-left: 10px;
+    font-size: 20px;
+	float: right;
+	font-weight: 300;
+	cursor: pointer;
+}
+
+
+.sub-header{
+    background-color: #fff;
+    position: fixed;
+    border-bottom: 1px solid #ccc;
+    left: 255px;
+    top: 55px;
+    right: 0px;
+    height: 55px;
+    padding: 0px 35px;
+	z-index: 31;
+}
+
+.sub-header .right-navbar{
+    float: right;
+    display: inline-block;
+    color: #666;
+    font-size: 20px;
+    height: 55px;
+    line-height: 55px;
+}
+
+.sub-header .left-navbar{
+    height: 55px;
+    line-height: 55px;
+	display: inline-block;
+}
+
+.breadcrumb {
+    display: inline-block;
+    background: none;
+	padding: 0px;
+}
+
+nav{
+	position: fixed;
+    left: 0px;
+    top: 55px;
+    border-right: 1px solid #ccc;
+    bottom: 0px;
+    height: auto;
+    width: 255px;
+	z-index: 35;
+	background: #fff;
+}
+
+nav input.form-control{
+    height: 33px;
+    width: 205px;
+    margin-left: 25px;
+    margin-top: 11px;
+}
+
+nav ul{
+	font-size: 20px;
+    list-style: none;
+    color: #666;
+    margin-top: 30px;
+    font-weight: 300;
+	padding: 0px;
+}
+
+nav li{
+	padding: 10px 25px;
+	cursor: pointer;
+}
+
+nav li.active{
+	background: #eee;
+}
+
+nav li:hover{
+	background: #eee;
+}
+
+nav .nav-footer{
+	position: absolute;
+    bottom: 0px;
+    border-top: 1px solid #ddd;
+    padding: 10px 25px;
+    width: 100%;
+    height: 200px;
+    padding-top: 40px;
+	color: #666;
+}
+
+.main-content{
+	position: absolute;
+    top: 110px;
+    left: 255px;
+    right: 0px;
+    bottom: 0px;
+    background: #F2F2F2;
+}
+
+.storage-container{
+    padding: 30px 35px;
+    position: relative;
+	display: block;
+	height: 300px;
+}
+
+.file.folder{
+	width: 70px;
+    text-align: center;
+    float: left;
+    margin-right: 25px;
+	cursor: pointer;
+}
+
+.file.folder.marked{
+    border: 1px dashed #bbb;
+    padding: 0px 5px;
+}
+
+.file.folder.cut-out{
+    opacity: 0.6;
+}
+
+
+menu[type=context] {
+    position:fixed;
+    display:none;
+    list-style:none;
+    z-index: 1000;
+    min-width: 160px;
+    padding: 10px 0;
+    margin: 2px 0 0;
+    font-size: 15px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+	border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	color: #333;
+}
+
+menu[type=context] li {
+    padding: 5px 15px;
+	cursor: pointer;
+}
+
+menu[type=context] li .fa {
+    width: 23px;
+}
+
+menu[type=context] li:hover {
+	background: #eee;
+}
+
+
+/* 
+
+Code Editor Anpassungen 
+
+*/
+
+.code-container{
+	background: #fff;
+	padding: 20px 0px;
+	margin-bottom: 100px;
+	border: 1px solid #ccc;
+}
+
+.code-container pre{
+	border: none;
+    box-shadow: none;
+}
+
+.code-container code{
+	background: #fff;
+}
+
+.token.tab:not(:empty):before {
+    content: '';
+}
+
+.token.lf:before {
+    content: '';
+}
+
+.token.space:before {
+    content: '';
+}
+
+pre .line-highlight {
+    background: rgba(78, 78, 78, 0.1);
+}
+
+pre[class*="language-"]:before, pre[class*="language-"]:after {
+	display: none;
+}
